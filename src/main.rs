@@ -5,6 +5,7 @@ use crate::cli::{CliArguments, Command};
 
 mod cli;
 mod commands;
+mod utils;
 
 fn main() -> anyhow::Result<()> {
     let args = CliArguments::try_parse().context("Unable to parse CLI arguments")?;
